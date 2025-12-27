@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Get chats list",
+      "method": "GET",
+      "queryStringParameters": {
+        "user_id": "1",
+        "action": "list"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "chats": []
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
